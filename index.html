@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="shortcut icon" href="#" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+			integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+		<link rel="preconnect" href="https://scripts.sirv.com" crossorigin />
+		<link rel="preconnect" href="https://listyara.sirv.com" crossorigin />
+		<link rel="dns-prefetch" href="https://scripts.sirv.com" />
+		<link rel="dns-prefetch" href="https://listyara.sirv.com" />
+
+		<title>RPC-HZ machine</title>
+	</head>
+
+	<body>
+		<div class="container">
+			<div id="loop" class="videoContainer">
+				<video
+					id="loopVideo"
+					src="./assets/loop.mp4"
+					playsinline
+					muted
+					autoplay
+					loop
+				></video>
+			</div>
+
+			<div id="mainButtons" class="show">
+				<div class="centerContainer">
+					<div class="buttonContainer">
+						<button id="fullscreen_button" class="button">
+							<i
+								id="expand"
+								class="fa-solid fa-up-right-and-down-left-from-center"
+							></i>
+							<i
+								id="contract"
+								class="fa-solid fa-down-left-and-up-right-to-center disabledb"
+							></i>
+						</button>
+					</div>
+				</div>
+				<div class="centerContainer">
+					<div class="buttonContainer">
+						<button id="easyC_button" class="button">Easy Changeover</button>
+					</div>
+				</div>
+
+				<div class="centerContainer">
+					<div class="svgContainer">
+						<svg id="easyC_line_svg" class="svg" width="100%" height="100%">
+							<line
+								x1="20%"
+								y1="14%"
+								x2="24.5%"
+								y2="30.8%"
+								stroke="#f04923"
+								stroke-width="3"
+							/>
+							<circle
+								class="svgDot"
+								id="easyC_circle"
+								cx="24.5%"
+								cy="30.8%"
+								r="6px"
+								fill="#f04923"
+							/>
+						</svg>
+					</div>
+				</div>
+
+				<div class="centerContainer">
+					<div class="buttonContainer">
+						<button id="reliableP_button" class="button">
+							Reliable Product
+							<br />
+							Acquisition and Packing
+						</button>
+					</div>
+				</div>
+				<div class="centerContainer">
+					<div class="svgContainer">
+						<svg id="reliableP_line_svg" class="svg" width="100%" height="100%">
+							<line
+								x1="25%"
+								y1="56%"
+								x2="35%"
+								y2="37%"
+								stroke="#f04923"
+								stroke-width="3"
+							/>
+							<circle
+								id="reliableP_circle"
+								class="svgDot"
+								cx="35%"
+								cy="37%"
+								r="6px"
+								fill="#f04923"
+							/>
+						</svg>
+					</div>
+				</div>
+				<div class="centerContainer">
+					<div class="buttonContainer">
+						<button id="scalable_button" class="button">
+							&nbsp&nbsp&nbspScalable&nbsp&nbsp&nbsp
+						</button>
+					</div>
+				</div>
+				<div class="centerContainer">
+					<div class="svgContainer">
+						<svg id="scalable_line_svg" class="svg" width="100%" height="100%">
+							<line
+								x1="41%"
+								y1="82%"
+								x2="49.7%"
+								y2="68%"
+								stroke="#f04923"
+								stroke-width="3"
+							/>
+							<circle
+								id="scalable_circle"
+								class="svgDot"
+								cx="49.7%"
+								cy="68%"
+								r="6px"
+								fill="#f04923"
+							/>
+						</svg>
+					</div>
+				</div>
+
+				<div class="centerContainer">
+					<div class="buttonContainer">
+						<button id="superiorC_button" class="button">
+							Superior Case Control
+						</button>
+					</div>
+				</div>
+
+				<div class="centerContainer">
+					<div class="svgContainer">
+						<svg id="superiorC_line_svg" class="svg" width="100%" height="100%">
+							<line
+								x1="27%"
+								y1="75.5%"
+								x2="47.6%"
+								y2="51%"
+								stroke="#f04923"
+								stroke-width="3"
+							/>
+							<circle
+								id="superiorC_circle"
+								class="svgDot"
+								cx="47.6%"
+								cy="51%"
+								r="6px"
+								fill="#f04923"
+							/>
+						</svg>
+					</div>
+				</div>
+
+				<div class="centerContainer">
+					<div class="buttonContainer">
+						<button id="reliableO_button" class="button">
+							Reliable Operation
+						</button>
+					</div>
+				</div>
+
+				<div class="centerContainer">
+					<div class="svgContainer">
+						<svg id="reliableO_line_svg" class="svg" width="100%" height="100%">
+							<line
+								x1="75.5%"
+								y1="17%"
+								x2="63.7%"
+								y2="46.6%"
+								stroke="#f04923"
+								stroke-width="3"
+							/>
+							<circle
+								id="reliableO_circle"
+								class="svgDot"
+								cx="63.7%"
+								cy="46.6%"
+								r="6px"
+								fill="#f04923"
+							/>
+						</svg>
+					</div>
+				</div>
+				<div class="centerContainer">
+					<div class="buttonContainer">
+						<button id="secureP_button" class="button">
+							Secure Product Containment
+						</button>
+					</div>
+				</div>
+
+				<div class="centerContainer">
+					<div class="svgContainer">
+						<svg id="secureP_line_svg" class="svg" width="100%" height="100%">
+							<line
+								x1="69%"
+								y1="86%"
+								x2="54.6%"
+								y2="44%"
+								stroke="#f04923"
+								stroke-width="3"
+							/>
+							<circle
+								id="secureP_circle"
+								class="svgDot"
+								cx="54.6%"
+								cy="44%"
+								r="6px"
+								fill="#f04923"
+							/>
+						</svg>
+					</div>
+				</div>
+				<div class="centerContainer">
+					<div class="buttonContainer">
+						<button id="dualF_button" class="button">
+							Dual Functioning Delta Robot
+						</button>
+					</div>
+				</div>
+
+				<div class="centerContainer">
+					<div class="svgContainer">
+						<svg id="dualF_line_svg" class="svg" width="100%" height="100%">
+							<line
+								x1="49.5%"
+								y1="13%"
+								x2="38.5%"
+								y2="38%"
+								stroke="#f04923"
+								stroke-width="3"
+							/>
+							<circle
+								id="dualF_circle"
+								class="svgDot"
+								cx="38.5%"
+								cy="38%"
+								r="6px"
+								fill="#f04923"
+							/>
+						</svg>
+					</div>
+				</div>
+
+				<div class="centerContainer">
+					<div class="buttonContainer">
+						<button id="quality_button" class="" style="display: none"></button>
+					</div>
+				</div>
+				<div class="centerContainer">
+					<div class="buttonContainer">
+						<div class="viewR_container">
+							<button id="viewR_button" class="viewR_a">View Rotation</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="showCont" class="showCont hidden short-vanish"></div>
+			<div class="warning">
+				<div class="modal">
+					<i class="fa-solid fa-circle-exclamation warnIcon"></i>
+					<span class="warningText"></span>
+				</div>
+			</div>
+			<div class="alertdiv">
+				<div class="modalalert">
+					<span id="close" class="x" value=""> &#x2715; </span>
+					<i class="fa-solid fa-circle-exclamation alertIcon"></i>
+					<span class="alertText">
+						Using this website on a Chrome web browser is recommended
+					</span>
+				</div>
+			</div>
+			<div class="loader">
+				<i class="fa-solid fa-spinner loadingIcon"></i>
+			</div>
+			<div class="initial"></div>
+		</div>
+	</body>
+	<script src="https://cdn.jsdelivr.net/npm/@svgdotjs/svg.js@3.0/dist/svg.min.js"></script>
+	<script src="https://scripts.sirv.com/sirv.js"></script>
+
+	<script src="js/main.js"></script>
+</html>
