@@ -323,18 +323,18 @@ ul {
 	opacity: 0;
 }
 ul li {
-	margin-bottom: 1em;
+	margin-bottom: 0.5em;
 	padding-left: 0.5rem;
-	text-indent: -0.85em;
+	text-indent: -0.6em; /*Cambiar esto tambien si se quiere separar la bullet del texto */
 }
 li:last-child {
 	margin-bottom: 0;
 }
 ul li::before {
-	content: '\2022'; /* Add content: \2022 is the CSS Code/unicode for a bullet */
-	color: #ff4500; /* Change the color */
-	font-weight: bold; /* If you want it to be bold */
-	margin-right: 0.5em;
+	content: '\2022';
+	color: #ff4500;
+	font-weight: bold;
+	margin-right: 0.2em; /* Separacion de la bullet con el texto */
 	width: 0.8em; /* Also needed for space (tweak if needed) */
 }
 

@@ -424,9 +424,9 @@ easyC_button.addEventListener('click', function (e) {
 	createContent(
 		'15%',
 		'13%',
-		`Fast Changeover&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`,
+		'Fast Changeover&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;',
 		[
-			`Toolless`,
+			'Toolless',
 			'Supported by scales, pointers and quick release handles',
 			'HMI guides user through numbered changeover points',
 			'With interactive guides',
@@ -452,9 +452,9 @@ easyC_button.addEventListener('click', function (e) {
 			createContent(
 				'15%',
 				'13%',
-				`Fast Changeover&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`,
+				'Fast Changeover&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;',
 				[
-					`Tolless`,
+					'Tolless',
 					'Supported by scales, pointers and quick release handles',
 					'HMI guides user through numbered changeover points with interactive guide',
 					'Live sensor map',
@@ -526,11 +526,11 @@ reliableP_button.addEventListener('click', function (e) {
 	)
 
 	createContent(
-		'65%',
-		'40%',
-		`Reliable Product\nAcquisition and Packing`,
+		'62%',
+		'30%',
+		'Reliable Product\nAcquisition and Packing &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;',
 		[
-			`Vision and line tracking`,
+			'Vision and line tracking',
 			'Allows robot to calculate pick and place position',
 			'Allows random product orientation',
 		],
@@ -550,11 +550,11 @@ reliableP_button.addEventListener('click', function (e) {
 
 			backButtonContainer.remove()
 			createContent(
-				'55.5%',
-				'38%',
-				`Intuitive aHMI with\nPallet Configuration&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`,
+				'62%',
+				'30%',
+				'Reliable Product\nAcquisition and Packing &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;',
 				[
-					`Vision and line tracking`,
+					'Vision and line tracking',
 					'Allows robot to calculate pick and place position',
 					'Allows random product orientation',
 				],
@@ -619,6 +619,17 @@ scalable_button.addEventListener('click', function (e) {
 		'assets/scalable/scalable3.mp4'
 	)
 
+	createContent(
+		'10%',
+		'45.5%',
+		'Scalable&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;',
+		[
+			'One, two or three delta robots, and one or two catcher units',
+			'Increases speed from 65 to 160ppm',
+			'Increases vertical case packing speed from 10 to 18 cpm',
+		],
+		'2vh 4vh 1.5vh 3.5vh'
+	)
 	window.addEventListener('resize', function (e) {
 		if (showCont.hasChildNodes()) {
 			const textContainer = document.querySelector('#centerContainer_text')
@@ -645,18 +656,6 @@ scalable_button.addEventListener('click', function (e) {
 			createBackButton()
 		}
 	})
-	createContent(
-		'70%',
-		'30%',
-		'Scalable&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;',
-		[
-			'One, two or three delta robots, and one or two catcher units',
-			'Increases speed from 65 to 160ppm',
-			'Increases vertical case packing speed from 10 to 18 cpm',
-		],
-		'2vh 4vh 1.5vh 3.5vh'
-	)
-
 	createBackButton()
 
 	check1()
@@ -714,11 +713,11 @@ superiorC_button.addEventListener('click', function (e) {
 	)
 
 	createContent(
-		'11%',
-		'37.5%',
+		'65%',
+		'30%',
 		'Superior Case Operation',
 		[
-			`High friction side belt case conveyor`,
+			'High friction side belt case conveyor',
 			'Provides reliable case containment',
 		],
 		'2vh 4vh 1.5vh 3.5vh'
@@ -737,11 +736,11 @@ superiorC_button.addEventListener('click', function (e) {
 
 			backButtonContainer.remove()
 			createContent(
-				'11%',
-				'37.5%',
+				'65%',
+				'30%',
 				'Continous&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\nOperation',
 				[
-					`High friction side belt case conveyor`,
+					'High friction side belt case conveyor',
 					'Provides reliable case containment',
 				],
 				'2vh 4vh 1.5vh 3.5vh'
@@ -807,7 +806,7 @@ reliableO_button.addEventListener('click', function (e) {
 	createContent(
 		'12%',
 		'33%',
-		`Reliable Operation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`,
+		'Reliable Operation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;',
 		[
 			'Robot Mean Time Between Failures: over 100,000 hrs',
 			'Minimal maintenance requirements',
@@ -828,9 +827,9 @@ reliableO_button.addEventListener('click', function (e) {
 
 			backButtonContainer.remove()
 			createContent(
-				'65%',
-				'35%',
-				`Reliable Operation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`,
+				'12%',
+				'33%',
+				'Reliable Operation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;',
 				[
 					'Robot Mean Time Between Failures: over 100,000 hrs',
 					'Minimal maintenance requirements',
@@ -896,9 +895,9 @@ secureP_button.addEventListener('click', function (e) {
 		'assets/secureP/secureP3.mp4'
 	)
 	createContent(
-		'65%',
-		'35%',
-		`Reliable Operation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`,
+		'10%',
+		'10%',
+		'Secure Product Container&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;',
 		[
 			'End of arm tool conforms to the product pattern',
 			'Gently grasps the product for reliable containment',
@@ -920,9 +919,9 @@ secureP_button.addEventListener('click', function (e) {
 
 			backButtonContainer.remove()
 			createContent(
-				'65%',
-				'35%',
-				`Reliable Operation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`,
+				'10%',
+				'10%',
+				'Secure Product Container&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;',
 				[
 					'End of arm tool conforms to the product pattern',
 					'Gently grasps the product for reliable containment',
@@ -991,7 +990,7 @@ dualF_button.addEventListener('click', function (e) {
 	createContent(
 		'65%',
 		'25%',
-		`Dual Functioning Delta Robot`,
+		'Dual Functioning Delta Robot',
 		[
 			'Product collation / pre-patterning for vertical loading',
 			'Horizontal case packing',
@@ -1014,7 +1013,7 @@ dualF_button.addEventListener('click', function (e) {
 			createContent(
 				'65%',
 				'25%',
-				`Dual Functioning Delta Robot`,
+				'Dual Functioning Delta Robot',
 				[
 					'Product collation / pre-patterning for vertical loading',
 					'Horizontal case packing',
