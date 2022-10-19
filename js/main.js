@@ -7,6 +7,7 @@ let textContent = ''
 let label = ''
 let labelCont = ''
 let paragraph = ''
+let span = ''
 let line = ''
 let svg1 = ''
 let circle = ''
@@ -171,14 +172,14 @@ function createContent(textLeft, textTop, labelTitle, pContent, labelPad) {
 	textContent.appendChild(labelCont)
 	labelCont.appendChild(label)
 
-	fontvar = `calc(11px + (23 - 11) * ((${
+	fontvar = `calc(11px + (28 - 11) * ((${
 		containVideoWidth + 'px'
 	} - 320px) / (1440 - 320)))`
 
 	label.style.fontSize = fontvar
 
 	if (pContent) {
-		fontvar = `calc(8px + (20 - 8) * ((${
+		fontvar = `calc(8px + (25 - 8) * ((${
 			containVideoWidth + 'px'
 		} - 320px) / (1440 - 320)))`
 
@@ -423,12 +424,12 @@ easyC_button.addEventListener('click', function (e) {
 	createContent(
 		'15%',
 		'13%',
-		`Fast Changeover&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`,
+		`Fast Changeover&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`,
 		[
-			`Tolless`,
+			`Toolless`,
 			'Supported by scales, pointers and quick release handles',
-			'HMI guides user through numbered changeover points with interactive guide',
-			'Live sensor map',
+			'HMI guides user through numbered changeover points',
+			'With interactive guides',
 			'Live sensor maps',
 			'Advanced maintenance features',
 			'Complete in under 5min by trained technician ',
@@ -530,7 +531,7 @@ reliableP_button.addEventListener('click', function (e) {
 		`Reliable Product\nAcquisition and Packing`,
 		[
 			`Vision and line tracking`,
-			'Allows robot to calculate pick position',
+			'Allows robot to calculate pick and place position',
 			'Allows random product orientation',
 		],
 		'2vh 4vh 1.5vh 3.5vh'
@@ -552,7 +553,11 @@ reliableP_button.addEventListener('click', function (e) {
 				'55.5%',
 				'38%',
 				`Intuitive aHMI with\nPallet Configuration&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`,
-				[`Easily create, modify, copy or clear recipes`],
+				[
+					`Vision and line tracking`,
+					'Allows robot to calculate pick and place position',
+					'Allows random product orientation',
+				],
 				'2vh 4vh 1.5vh 3.5vh'
 			)
 			animations()
@@ -629,8 +634,9 @@ scalable_button.addEventListener('click', function (e) {
 				'30%',
 				'Scalable&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;',
 				[
-					'One, two or three delta robot modules',
-					'Increases speed from 65 to 160 products per minute ',
+					'One, two or three delta robots, and one or two catcher units',
+					'Increases speed from 65 to 160ppm',
+					'Increases vertical case packing speed from 10 to 18 cpm',
 				],
 				'2vh 4vh 1.5vh 3.5vh'
 			)
@@ -644,8 +650,9 @@ scalable_button.addEventListener('click', function (e) {
 		'30%',
 		'Scalable&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;',
 		[
-			'One, two or three delta robot modules',
-			'Increases speed from 65 to 160 products per minute ',
+			'One, two or three delta robots, and one or two catcher units',
+			'Increases speed from 65 to 160ppm',
+			'Increases vertical case packing speed from 10 to 18 cpm',
 		],
 		'2vh 4vh 1.5vh 3.5vh'
 	)
@@ -733,7 +740,10 @@ superiorC_button.addEventListener('click', function (e) {
 				'11%',
 				'37.5%',
 				'Continous&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\nOperation',
-				[`Exchange full pallet while other pallet is being built`],
+				[
+					`High friction side belt case conveyor`,
+					'Provides reliable case containment',
+				],
 				'2vh 4vh 1.5vh 3.5vh'
 			)
 			animations()
@@ -795,12 +805,12 @@ reliableO_button.addEventListener('click', function (e) {
 		'assets/reliableO/reliableO3.mp4'
 	)
 	createContent(
-		'65%',
-		'35%',
-		`Reliable Operation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`,
+		'12%',
+		'33%',
+		`Reliable Operation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`,
 		[
 			'Robot Mean Time Between Failures: over 100,000 hrs',
-			'Allows robot to calculate pick position',
+			'Minimal maintenance requirements',
 		],
 		'2vh 4vh 1.5vh 3.5vh'
 	)
@@ -823,7 +833,7 @@ reliableO_button.addEventListener('click', function (e) {
 				`Reliable Operation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`,
 				[
 					'Robot Mean Time Between Failures: over 100,000 hrs',
-					'Allows robot to calculate pick position',
+					'Minimal maintenance requirements',
 				],
 				'2vh 4vh 1.5vh 3.5vh'
 			)
@@ -890,8 +900,9 @@ secureP_button.addEventListener('click', function (e) {
 		'35%',
 		`Reliable Operation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`,
 		[
-			'Robot Mean Time Between Failures: over 100,000 hrs',
-			'Allows robot to calculate pick position',
+			'End of arm tool conforms to the product pattern',
+			'Gently grasps the product for reliable containment',
+			'Robot tool moves into inverted position for product release',
 		],
 		'2vh 4vh 1.5vh 3.5vh'
 	)
@@ -913,8 +924,9 @@ secureP_button.addEventListener('click', function (e) {
 				'35%',
 				`Reliable Operation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`,
 				[
-					'Robot Mean Time Between Failures: over 100,000 hrs',
-					'Allows robot to calculate pick position',
+					'End of arm tool conforms to the product pattern',
+					'Gently grasps the product for reliable containment',
+					'Robot tool moves into inverted position for product release',
 				],
 				'2vh 4vh 1.5vh 3.5vh'
 			)
@@ -978,11 +990,11 @@ dualF_button.addEventListener('click', function (e) {
 	)
 	createContent(
 		'65%',
-		'35%',
-		`Reliable Operation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`,
+		'25%',
+		`Dual Functioning Delta Robot`,
 		[
-			'Robot Mean Time Between Failures: over 100,000 hrs',
-			'Allows robot to calculate pick position',
+			'Product collation / pre-patterning for vertical loading',
+			'Horizontal case packing',
 		],
 		'2vh 4vh 1.5vh 3.5vh'
 	)
@@ -1001,11 +1013,11 @@ dualF_button.addEventListener('click', function (e) {
 			backButtonContainer.remove()
 			createContent(
 				'65%',
-				'35%',
-				`Reliable Operation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`,
+				'25%',
+				`Dual Functioning Delta Robot`,
 				[
-					'Robot Mean Time Between Failures: over 100,000 hrs',
-					'Allows robot to calculate pick position',
+					'Product collation / pre-patterning for vertical loading',
+					'Horizontal case packing',
 				],
 				'2vh 4vh 1.5vh 3.5vh'
 			)

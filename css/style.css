@@ -307,6 +307,7 @@ a {
 	font-weight: 600;
 	opacity: 0;
 	overflow: hidden;
+	margin-left: 0.5rem;
 	letter-spacing: 0.5px;
 }
 .pCont {
@@ -323,6 +324,8 @@ ul {
 }
 ul li {
 	margin-bottom: 1em;
+	padding-left: 0.5rem;
+	text-indent: -0.85em;
 }
 li:last-child {
 	margin-bottom: 0;
@@ -331,9 +334,8 @@ ul li::before {
 	content: '\2022'; /* Add content: \2022 is the CSS Code/unicode for a bullet */
 	color: #ff4500; /* Change the color */
 	font-weight: bold; /* If you want it to be bold */
-	display: inline-block; /* Needed to add space between the bullet and the text */
+	margin-right: 0.5em;
 	width: 0.8em; /* Also needed for space (tweak if needed) */
-	margin-left: -0.9em; /* Also needed for space (tweak if needed) */
 }
 
 .backButton {
