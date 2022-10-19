@@ -95,13 +95,16 @@ function animations() {
 	pCont.style.animation =
 		'grow 0.5s cubic-bezier(0.86, 0.01, 0.77, 0.18) forwards'
 	list.style.animation = 'fadein 0.5s ease-in-out forwards'
-	boxVideo.style.animation =
-		'growVideo 0.5s cubic-bezier(0.86, 0.01, 0.77, 0.18) forwards '
+
 	labelCont.style.animationDelay = '0.5s'
 	label.style.animationDelay = '1s'
 	pCont.style.animationDelay = '1s'
 	list.style.animationDelay = '1.5s'
-	boxVideo.style.animationDelay = '1.8s'
+	if (boxVideo) {
+		boxVideo.style.animation =
+			'growVideo 0.5s cubic-bezier(0.86, 0.01, 0.77, 0.18) forwards '
+		boxVideo.style.animationDelay = '1.8s'
+	}
 }
 
 // Create the video tags storaged in videoContainer div
@@ -220,7 +223,7 @@ function createContent(
 		boxVideo.src = inputVideo
 		boxVideo.autoplay = true
 		boxVideo.loop = true
-		// boxVideo.controls = true
+		boxVideo.controls = false
 		boxVideo.classList.add('boxVideo')
 		list.appendChild(boxVideo)
 	}
@@ -1015,7 +1018,7 @@ dualF_button.addEventListener('click', function (e) {
 			'Horizontal case packing',
 		],
 		'2vh 4vh 1.5vh 3.5vh',
-		'assets/dualF/dualF1.mp4'
+		'assets/dualF/dualFmini.mp4'
 	)
 
 	createBackButton()
@@ -1194,7 +1197,7 @@ viewR_button.addEventListener('click', function (e) {
 		model.classList.add('Sirv')
 		model.setAttribute(
 			'data-src',
-			'https://rotation.marketscale.com/Companies/PearsonPackaging/37741_DualDeltaCatcher_RTL_HZ/37741_DualDeltaCatcher_RTL_HZ.spin'
+			'https://rotation.marketscale.com/Companies/PearsonPackaging/36572_DualDeltaCatcher_RTL_HV/36572_DualDeltaCatcher_RTL_HV.spin'
 		)
 
 		showCont.appendChild(model)
