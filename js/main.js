@@ -12,6 +12,7 @@ let line = ''
 let svg1 = ''
 let circle = ''
 let backButton = ''
+let boxVideo = ''
 let backButtonContainer = ''
 let containVideoWidth = ''
 let containVideoHeight = ''
@@ -94,10 +95,13 @@ function animations() {
 	pCont.style.animation =
 		'grow 0.5s cubic-bezier(0.86, 0.01, 0.77, 0.18) forwards'
 	list.style.animation = 'fadein 0.5s ease-in-out forwards'
+	boxVideo.style.animation =
+		'growVideo 0.5s cubic-bezier(0.86, 0.01, 0.77, 0.18) forwards '
 	labelCont.style.animationDelay = '0.5s'
 	label.style.animationDelay = '1s'
 	pCont.style.animationDelay = '1s'
 	list.style.animationDelay = '1.5s'
+	boxVideo.style.animationDelay = '1.8s'
 }
 
 // Create the video tags storaged in videoContainer div
@@ -143,7 +147,14 @@ function createVideos(source1, source2, source3) {
 }
 
 // Create the content storaged in showCont div / Left and Top position of the container div, label title and content of the paragraph
-function createContent(textLeft, textTop, labelTitle, pContent, labelPad) {
+function createContent(
+	textLeft,
+	textTop,
+	labelTitle,
+	pContent,
+	labelPad,
+	inputVideo
+) {
 	const centerContainerMade = document.createElement('div')
 	centerContainerMade.classList.add('centerContainer')
 	centerContainerMade.setAttribute('id', 'centerContainer_text')
@@ -204,7 +215,15 @@ function createContent(textLeft, textTop, labelTitle, pContent, labelPad) {
 		pCont.appendChild(list)
 		textContent.appendChild(pCont)
 	}
-
+	if (inputVideo) {
+		boxVideo = document.createElement('video')
+		boxVideo.src = inputVideo
+		boxVideo.autoplay = true
+		boxVideo.loop = true
+		// boxVideo.controls = true
+		boxVideo.classList.add('boxVideo')
+		list.appendChild(boxVideo)
+	}
 	showCont.appendChild(textContent)
 
 	showCont.appendChild(centerContainerMade)
@@ -995,7 +1014,8 @@ dualF_button.addEventListener('click', function (e) {
 			'Product collation / pre-patterning for vertical loading',
 			'Horizontal case packing',
 		],
-		'2vh 4vh 1.5vh 3.5vh'
+		'2vh 4vh 1.5vh 3.5vh',
+		'assets/dualF/dualF1.mp4'
 	)
 
 	createBackButton()
@@ -1018,7 +1038,8 @@ dualF_button.addEventListener('click', function (e) {
 					'Product collation / pre-patterning for vertical loading',
 					'Horizontal case packing',
 				],
-				'2vh 4vh 1.5vh 3.5vh'
+				'2vh 4vh 1.5vh 3.5vh',
+				'assets/dualF/dualF1.mp4'
 			)
 			animations()
 			createBackButton()
