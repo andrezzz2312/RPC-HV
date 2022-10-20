@@ -223,6 +223,8 @@ function createContent(
 		boxVideo.src = inputVideo
 		boxVideo.autoplay = true
 		boxVideo.loop = true
+		video3.muted = true
+		boxVideo.setAttribute('playsinline', 'playsinline')
 		boxVideo.controls = false
 		boxVideo.classList.add('boxVideo')
 		list.appendChild(boxVideo)
