@@ -436,13 +436,13 @@ fullscreen_button.addEventListener('click', function (e) {
 	}
 })
 
-easyC_button.addEventListener('click', function (e) {
+fastC_button.addEventListener('click', function (e) {
 	HideShowMainButtons()
 
 	createVideos(
-		'assets/easyC/easyC1.mp4',
-		'assets/easyC/easyC2.mp4',
-		'assets/easyC/easyC3.mp4'
+		'assets/fastC/fastC1.mp4',
+		'assets/fastC/fastC2.mp4',
+		'assets/fastC/fastC3.mp4'
 	)
 
 	createContent(
@@ -478,10 +478,10 @@ easyC_button.addEventListener('click', function (e) {
 				'13%',
 				'Fast Changeover&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;',
 				[
-					'Tolless',
+					'Toolless',
 					'Supported by scales, pointers and quick release handles',
-					'HMI guides user through numbered changeover points with interactive guide',
-					'Live sensor map',
+					'HMI guides user through numbered changeover points',
+					'With interactive guides',
 					'Live sensor maps',
 					'Advanced maintenance features',
 					'Complete in under 5min by trained technician ',
@@ -649,7 +649,7 @@ scalable_button.addEventListener('click', function (e) {
 		'Scalable&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;',
 		[
 			'One, two or three delta robots, and one or two catcher units',
-			'Increases speed from 65 to 160ppm',
+			'Increases product pick speed from 65 to 160ppm',
 			'Increases vertical case packing speed from 10 to 18 cpm',
 		],
 		'2vh 4vh 1.5vh 3.5vh'
@@ -670,7 +670,7 @@ scalable_button.addEventListener('click', function (e) {
 				'Scalable&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;',
 				[
 					'One, two or three delta robots, and one or two catcher units',
-					'Increases speed from 65 to 160ppm',
+					'Increases product pick speed from 65 to 160ppm',
 					'Increases vertical case packing speed from 10 to 18 cpm',
 				],
 				'2vh 4vh 1.5vh 3.5vh'
@@ -762,7 +762,7 @@ superiorC_button.addEventListener('click', function (e) {
 			createContent(
 				'65%',
 				'30%',
-				'Continous&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\nOperation',
+				'Superior Case Operation',
 				[
 					'High friction side belt case conveyor',
 					'Provides reliable case containment',
